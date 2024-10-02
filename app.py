@@ -22,7 +22,7 @@ ax.axis('off')
 gdf.plot(column='data', cmap='PuBu', linewidth=0.5, ax=ax, edgecolor='0.2',legend=True)
 st.pyplot(fig)
 
-mandal_gdf = gpd.read_file('./map/Allmandals.shp')
+mandal_gdf = gpd.read_file('./map/AllMandals.shp')
 mandal_gdf['data'] = mandal_gdf.apply(lambda _: random.randint(1,100), axis=1)
 
 # st.write(mandal_gdf.head())
